@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+set -ex
+
 sudo yum -y update
 sudo yum -y install epel-release
 sudo yum -y install mysql mariadb-server MySQL-python httpd icinga2
@@ -12,5 +14,5 @@ if [ ! -f ${MYCNF_PATH} ]; then
 	echo "user=root" >> ${MYCNF_PATH}
 fi
 
-sudo ansible-playbook icinga.yml
+sudo ansible-playbook playbook.yml
 
