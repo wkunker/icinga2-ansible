@@ -4,7 +4,7 @@ set -ex
 
 sudo yum -y update
 sudo yum -y install epel-release
-sudo yum -y install mysql mariadb-server MySQL-python httpd icinga2
+sudo yum -y install mysql mariadb-server MySQL-python httpd icinga2 mailx
 sudo rpm --import http://packages.icinga.org/icinga.key
 yum list installed icinga-rpm-release
 if [ $(echo "$?") -ne "0" ]; then
