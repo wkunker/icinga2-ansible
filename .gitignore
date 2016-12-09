@@ -3,4 +3,5 @@
 *.sh
 *.ini
 *.pem
+*.retry
 site.yml

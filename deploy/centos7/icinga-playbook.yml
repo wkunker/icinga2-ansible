@@ -1,0 +1,10 @@
+---
+# Test
+
+- name: test
+  hosts: localhost ansible_connection=local
+  remote_user: root
+
+  roles:
+   - icinga2-ansible-web2-ui
+
